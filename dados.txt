@@ -1,0 +1,20 @@
+
+
+babel plugin
+  https://www.npmjs.com/package/babel-plugin-module-resolver
+npm install --save-dev babel-plugin-module-resolver
+
+biblioteca para estilizacao styled-components
+   npm install styled-components  versao antigo npm i styled-components@5.3.9
+   npm install --save @types/styled-components
+   npm install --save @types/styled-components-react-native
+   yarn add -D @types/styled-components-react-native 
+
+   ou utilizar assim
+     import {useTheme} from 'styled-components';
+     background-color: ${() => useTheme().COLORS.GRAY_600};
+
+
+  font expo google
+    expo install expo-font @expo-google-fonts/roboto
+ 
