@@ -17,4 +17,9 @@ biblioteca para estilizacao styled-components
 
   font expo google
     expo install expo-font @expo-google-fonts/roboto
- 
+
+  biblioteca de icon 
+  https://github.com/phosphor-icons/homepage#phosphor-icons
+  npm install --save phosphor-react-native
+  https://docs.expo.dev/ui-programming/using-svgs/?utm_source=google&utm_medium=cpc&utm_content=performancemax&gclid=CjwKCAjwvfmoBhAwEiwAG2tqzH98g5LaBdIynYNSe-ybHABoMH0VmfdcRj2EFVBw3eHioYwUfFhEfxoC-20QAvD_BwE
+  npx expo install react-native-svg
