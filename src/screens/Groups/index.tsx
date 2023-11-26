@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FlatList } from "react-native";
-import { Highligt } from "@components/Highlight";
+import { Highlight } from "@components/Highlight";
 import { Header } from "@components/Header";
 import { GroupCard } from "@components/GroupCard";
 
@@ -8,7 +8,7 @@ import { Container } from "./styled";
 import { ListEmpty } from "@components/ListEmpty";
 import { Button } from "@components/Button";
 
-export default function Groups() {
+export function Groups() {
   const [groups, setGroups] = useState<String[]>([
     "Galera da rocket",
     "Amigos",
@@ -18,7 +18,7 @@ export default function Groups() {
     <Container>
       <Header />
 
-      <Highligt title="Turmas" subtitle="jogue com a sua turma" />
+      <Highlight title="Turmas" subtitle="jogue com a sua turma" />
 
       <FlatList
         data={groups}
@@ -28,7 +28,9 @@ export default function Groups() {
         ListEmptyComponent={() => (
           <ListEmpty message="Que tal cadastrar a primeira turma?" />
         )}
+        showsVerticalScrollIndicator={false}
       />
+
       <Button title="Criar nova turma" />
     </Container>
   );

@@ -23,3 +23,9 @@ biblioteca para estilizacao styled-components
   npm install --save phosphor-react-native
   https://docs.expo.dev/ui-programming/using-svgs/?utm_source=google&utm_medium=cpc&utm_content=performancemax&gclid=CjwKCAjwvfmoBhAwEiwAG2tqzH98g5LaBdIynYNSe-ybHABoMH0VmfdcRj2EFVBw3eHioYwUfFhEfxoC-20QAvD_BwE
   npx expo install react-native-svg
+
+biblioteca de navgation 
+   https://reactnavigation.org/docs/getting-started/
+   npm install @react-navigation/native
+   npx expo install react-native-screens react-native-safe-area-context
+   npm install @react-navigation/native-stack 
