@@ -10,13 +10,14 @@ import { ListEmpty } from "@components/ListEmpty";
 import { PlayerCard } from "@components/PlayerCard";
 
 import { Button } from "@components/Button";
-import { useRoute } from "@react-navigation/native";
+import { useRoute, useNavigation } from "@react-navigation/native";
 import { PlayerStorageDTO } from "@storage/player/PlayerStorareDTO";
 import { playerAddByGroup } from "@storage/player/playerAddByGroup";
 import { playerRemoveByGroup } from "@storage/player/playerRemoveByGroup";
 import { playerGetByGroupAndTeam } from "@storage/player/playersGetByGroupAndTeam";
 import { AppError } from "@utils/AppError";
 import { Container, Form, HeaderList, NumberOfPlayers } from "./styles";
+import { groupRemoveByName } from "@storage/group/groupRemoveByName";
 
 type RouteParams = {
   group: string;
@@ -27,6 +28,7 @@ export function Players() {
   const [team, setTeam] = useState("Time A");
   const [players, setPlayers] = useState<PlayerStorageDTO[]>([]);
 
+  const navigation = useNavigation();
   const route = useRoute();
   const { group } = route.params as RouteParams;
 
@@ -83,6 +85,28 @@ export function Players() {
       console.log(error);
       Alert.alert("Remover pessoa", "Não foi possivel remover essa pessoa.");
     }
+  }
+
+  async function groupRemove() {
+    try {
+      await groupRemoveByName(group);
+      navigation.navigate("groups");
+    } catch (error) {
+      console.log(error);
+      Alert.alert("Remover grupo", "Não foi possivel remover o grupo.");
+    }
+  }
+  async function handleGroupRemove() {
+    Alert.alert("Remover", "Deseja remover o grupo?", [
+      {
+        text: "Não",
+        style: "cancel",
+      },
+      {
+        text: "Sim",
+        onPress: () => groupRemove(),
+      },
+    ]);
   }
 
   useEffect(() => {
@@ -144,7 +168,11 @@ export function Players() {
         ]}
       />
 
-      <Button title="Remover Turma" type="SECONDARY" />
+      <Button
+        title="Remover Turma"
+        type="SECONDARY"
+        onPress={handleGroupRemove}
+      />
     </Container>
   );
 }
