@@ -30,9 +30,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <table align="center" display=flex>
   <tr>
-    <td align="center">Bem vindo</td>
-    <td align="center">Criar Nova Turma</td>
-    <td align="center">Adicionar as galera</td>
+    <td align="center">Turma</td>
+    <td align="center">Criar</td>
+    <td align="center">Adicionar</td>
   </tr>
   <tr>
     <td><img src="https://github.com/Borges10002/iginitetems-react-native/blob/main/assets/Captura%20de%20tela%202024-01-11%20220437.png" width=200 height=400></td>
