@@ -1,3 +1,5 @@
+criar um novo projeto
+ expo init iginitegym --npm
 
 
 babel plugin
