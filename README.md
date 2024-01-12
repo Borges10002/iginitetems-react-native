@@ -30,10 +30,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <table align="center" display=flex>
   <tr>
-    <td align="center">Splash</td>
     <td align="center">Bem vindo</td>
-    <td align="center">Confirmar nome</td>
-    <td align="center">Começar</td>
+    <td align="center">Criar Nova Turma</td>
+    <td align="center">Adicionar as galera</td>
   </tr>
   <tr>
     <td><img src="https://github.com/Borges10002/PlantManager-NLW-05/blob/main/src/assets/imgs/1-Splash.png" width=200 height=400></td>
@@ -41,14 +40,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
     <td><img src="https://github.com/Borges10002/PlantManager-NLW-05/blob/main/src/assets/imgs/3%20-Confirmar%20nome.png" width=200 height=400></td>
     <td><img src="https://github.com/Borges10002/PlantManager-NLW-05/blob/main/src/assets/imgs/5-Come%C3%A7ar.png" width=200 height=400></td>
   </tr>
- </table>
-
- <table align="center"  display=flex>
-  <tr>
-    <td align="center">Escolha uma planta</td>
-     <td align="center">Tudo certo</td>
-     <td align="center">Minhas plantas</td>
-     <td align="center">Planta</td>
-  </tr>
-
  </table>
